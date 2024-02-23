@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    border-radius: 20px;
+    /* border: 1px solid red; */
+    
+}
+
+.innercard p {
+    text-align: center;
+    color: rgb(23, 150, 129);
+}
+
+.delete {
+    margin-right: 150px;
+}
+
+.innercard img {
+    border-radius: 20px;
+}
+
+.innercard {
+    width: 30%;
+}
+
+.cardheader {
+    font-size: 40px;
+    font-style: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    color: rgb(148, 23, 159);
+}
+.edith{
+    font-size: 40px;
+    font-style: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    color: rgb(23, 159, 75);
+}
+.owlbody{
+    width: 100%;
+    background-color: beige;
+}
+.formfield{
+    margin-top: 60px;
+}

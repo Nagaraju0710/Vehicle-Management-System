@@ -11,6 +11,9 @@ import Vendors from "../Pages/Vendor"
 import Product from "../Pages/Products"
 import Home from "../Pages/HomePage"
 
+import GetVehicleData from "../Pages/VehicleData"
+import Private from "./Private"
+
 
 
 export const AllRoutes=()=>{
@@ -21,9 +24,10 @@ export const AllRoutes=()=>{
                 <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path="/vehicles" element={<Vehicles/>}/>
                 <Route path="/vendors" element={<Vendors/>}/>
-                <Route path="/products" element={<Product/>}/>
+                <Route path="/products" element={<Private><Product/></Private>}/>
                 <Route path="/login" element={<LogIn/>}/>
                 <Route path="/sign-up" element={<SignUp/>}/>
+               
                 
             </Routes>
         </div>

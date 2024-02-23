@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import "../CSS/vehicle.css"
 import { Button, ButtonGroup } from '@chakra-ui/react'
 
-
-const Vehicles=()=>{
+const GetVehicleData = () => {
     const [vehicles, setVehicles] = useState([]);
     const [formData, setFormData] = useState({
         make: '',
@@ -116,7 +115,7 @@ const Vehicles=()=>{
             </div>
         </div>
     );
-}
+};
 
 const DIV = styled.div`
   /* width: 400px; */
@@ -165,4 +164,5 @@ const DIV = styled.div`
 
 
 
-export default Vehicles
+
+export default GetVehicleData;

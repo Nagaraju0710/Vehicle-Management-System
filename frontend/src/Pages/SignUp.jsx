@@ -19,13 +19,13 @@ const SignUp = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-     setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://good-pink-catfish-coat.cyclic.app/users/register', formData);
+      const response = await axios.post('https://real-cyan-ostrich-yoke.cyclic.app/users/register', formData);
       console.log(response.data); // Assuming the backend sends back a success message
       // Redirect to login page or show success message to the user
     } catch (error) {
@@ -43,6 +43,7 @@ const SignUp = () => {
         gap: "2rem",
         marginTop: "3rem",
         flexWrap: "wrap",
+        backgroundColor:"ButtonHighlight"
       }}
     >
       <div>
@@ -81,17 +82,9 @@ const SignUp = () => {
             />
           </div>
           <div>
-            <input style={{ margin: "7px 0" }} placeholder="Gender"  onChange={handleChange} name="gender" id="" value={formData.gender}/>
-            {/* <label>gender-Card:</label> */}
-            {/* <select style={{ margin: "7px 0" }}  onChange={handleChange} name="gender" id="" value={formData.gender}>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select> */}
+            <input style={{ margin: "7px 0" }} placeholder="Gender" onChange={handleChange} name="gender" id="" value={formData.gender} />
           </div>
           <div>
-            {/* <label>Password:</label> */}
-
             <input
               style={{ margin: "7px 0" }}
               type='password'
@@ -146,7 +139,7 @@ const DIV = styled.div`
     border-radius: 6px;
     color: #333;
     /* border: ${({ err }) =>
-      err === "true" ? "2px solid red" : "1px solid grey"}; */
+    err === "true" ? "2px solid red" : "1px solid grey"}; */
   }
   button {
     width: 100%;
