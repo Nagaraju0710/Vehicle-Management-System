@@ -76,6 +76,7 @@ const Vehicles=()=>{
                         <p>Year: {vehicle.year}</p>
                         <p>D.C. Number: {vehicle.dcNumber}</p>
                         <p>P.O. Number: {vehicle.poNumber}</p>
+                        <p>{vehicle.checkedOut}</p>
                         <Button className="delete" colorScheme='red'  onClick={() => handleDelete(vehicle._id)}>DELETE</Button>
                         <Button className="edit" colorScheme='blue' onClick={() => handleEdit(vehicle._id)}>EDIT</Button>
                        
@@ -109,6 +110,10 @@ const Vehicles=()=>{
                     <div>
                         <label>P.O. Number:</label>
                         <input style={{ margin: "7px 0" }} type="text" name="poNumber" value={formData.poNumber} onChange={handleChange} />
+                    </div>
+                    <div>
+                        <label>checkedOut:</label>
+                        <input style={{ margin: "7px 0" }} type="text" name="checkedOut" value={formData.checkedOut} onChange={handleChange} />
                     </div>
                     <button style={{ padding: "10px 0" }} type="submit">Add Vehicle</button>
                 </form>

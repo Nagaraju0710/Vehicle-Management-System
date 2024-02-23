@@ -11,7 +11,8 @@ const Dashboard=()=>{
         year: '',
         dcNumber: '',
         poNumber: '',
-        image:''
+        image:'',
+        checkedOut:""
       });
     const navigate=useNavigate()
       const handleChange = (e) => {
@@ -28,7 +29,7 @@ const Dashboard=()=>{
         } catch (error) {
           console.error('Error adding vehicle:', error);
         }
-navigate("/vehicledata")
+navigate("/vehicles")
       };
     
       return (
@@ -59,6 +60,10 @@ navigate("/vehicledata")
             <div>
               <label>P.O. Number:</label>
               <input  style={{ margin: "7px 0" }} type="text" name="poNumber" value={formData.poNumber} onChange={handleChange} />
+            </div>
+            <div>
+              <label>CheckedOut:</label>
+              <input  style={{ margin: "7px 0" }} type="text" name="checkedOut" value={formData.checkedOut} onChange={handleChange} />
             </div>
             <button style={{ padding: "10px 0" }}  type="submit">Add Vehicle</button>
           </form>
